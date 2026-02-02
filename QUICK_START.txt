@@ -1,0 +1,73 @@
+========================================
+QUICK START GUIDE
+========================================
+
+3 SIMPLE STEPS TO GET STARTED:
+
+1. IMPORT DATABASE
+   - Open phpMyAdmin (http://localhost/phpmyadmin)
+   - Click "Import"
+   - Choose "database_schema.sql"
+   - Click "Go"
+
+2. CONFIGURE
+   - Open config/db.php
+   - Set your MySQL password if needed
+   - Save file
+
+3. LOGIN
+   - Open: http://localhost/your-folder/login.php
+   - Instructor: john.smith@university.edu / password123
+   - Student: emma.wilson@student.edu / password123
+
+========================================
+WHAT'S NEW:
+========================================
+
+✓ Password Hashing (bcrypt)
+✓ CSRF Protection
+✓ Separate Instructor/Student Databases
+✓ Instructor Can Enroll Students
+✓ Student Can View Enrolled Courses
+✓ Role-Based Access Control
+
+========================================
+FILE STRUCTURE (Same as before!)
+========================================
+
+Your original structure is maintained.
+Enhanced files:
+- login.php
+- register.php
+- includes/functions.php
+- public/instructors/dashboard.php
+- public/students/dashboard.php
+
+New files:
+- public/instructors/enroll_student.php
+- logout.php
+- database_schema.sql
+
+========================================
+TESTING:
+========================================
+
+1. Login as Instructor (john.smith@university.edu)
+2. Click "Enroll Student"
+3. Select student "Emma Wilson"
+4. Select course "CS101"
+5. Click "Enroll Student"
+6. Logout
+7. Login as Student (emma.wilson@student.edu)
+8. See CS101 in enrolled courses!
+
+========================================
+NEED HELP?
+========================================
+
+See README.md for detailed documentation.
+
+Common issues:
+- "Database connection failed" → Check config/db.php
+- "Access Denied" → Use correct user type when logging in
+- "Invalid credentials" → Password is "password123" for all demo accounts
